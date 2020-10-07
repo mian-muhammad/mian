@@ -12,5 +12,13 @@
 		"mian muhammad",
 		"mianm",
 		"mian"
-	]
+	],
+	"license": "MIT",
+	"main": "index.js",
+	"repository": "mian-muhammad/mian",
+	"author": {
+		"name": "Mian Muhammad",
+		"email": "mianmuhammad80@gmail.com",
+		"url": "https://twitter.com/mian_se"
+	}
 }
