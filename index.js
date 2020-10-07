@@ -2,25 +2,28 @@
 
 const pkgJSON = require('./package.json');
 const welcome = require('cli-welcome');
+const chalk = require('chalk');
+
+const log = console.log;
+const twitterClr = chalk.hex(`#1da1f2`).bold.inverse;
+const githubClr = chalk.hex(`#6cc644`).bold.inverse;
+const blogClr = chalk.hex(`#8e43e7`).bold.inverse;
+const dim = chalk.dim;
 
 welcome({
-	title: pkgJSON.name,
+	title: `Mian Muhammad`,
 	tagLine: `Howdy, nice to meet you!`,
 	description: pkgJSON.description,
-	bgColor: `#fca326`,
+	bgColor: `#8e43e7`,
 	color: `#000000`,
 	bold: true,
 	clear: true,
 	version: pkgJSON.version
 });
 
-console.log(`
-Mian Muhammad
+log(`${chalk.italic(`Hello I'm Mian Muhammad, a software engineer.`)}
 
-Hello I'm Mian Muhammad, a software engineer.
-
-🐦 Twitter: https://twitter.com/mian_se
-📖 GitHub:  https://github.com/mian-muhammad
-🤖 Blog:    http://mianmuhammad.info/
-
+🐦 ${twitterClr(` Twitter `)} ${dim(`https://twitter.com/mian_se`)}
+📖 ${githubClr(` GitHub `)}  ${dim(`https://github.com/mian-muhammad`)}
+🤖 ${blogClr(` Blog `)}    ${dim(`http://mianmuhammad.info/`)}
 `);
