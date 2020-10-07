@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
 console.log(`
-Mian Mohammad
+Mian Muhammad
 
-Hello I'm Mian Mohammad, a software engineer.
+Hello I'm Mian Muhammad, a software engineer.
 
 🐦 Twitter: https://twitter.com/mian_se
 📖 GitHub:  https://github.com/mian-muhammad
