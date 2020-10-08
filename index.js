@@ -3,6 +3,7 @@
 const pkgJSON = require('./package.json');
 const welcome = require('cli-welcome');
 const chalk = require('chalk');
+const checkNode = require('cli-check-node');
 
 const log = console.log;
 const twitterClr = chalk.hex(`#1da1f2`).bold.inverse;
@@ -20,6 +21,8 @@ welcome({
 	clear: true,
 	version: pkgJSON.version
 });
+
+checkNode('10');
 
 log(`${chalk.italic(`Hello I'm Mian Muhammad, a software engineer.`)}
 
